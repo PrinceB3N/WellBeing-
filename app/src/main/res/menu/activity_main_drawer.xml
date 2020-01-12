@@ -3,26 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group>
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_medical"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_medical" />
-        <item
-            android:id="@+id/nav_fitness"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_fitness" />
-        <item
-            android:id="@+id/nav_mind"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/menu_mind" />
+            android:id="@+id/nav_profile"
+            android:title="Profile" />
+
     </group>
 
-    <item android:title="Body">
+    <item android:title="Nutrition">
         <menu>
             <item
                 android:id="@+id/nav_foodbank"
@@ -42,8 +34,30 @@
         </menu>
     </item>
 
-    <item android:title="Mind">
+    <item android:title="Mindfulness">
         <menu>
+            <item
+                android:id="@+id/nav_clas"
+                android:title="@string/menudrop_clas" />
+            <item
+                android:id="@+id/nav_caps"
+                android:title="@string/menudrop_caps" />
+        </menu>
+    </item>
+
+    <item android:title="Fitness">
+        <menu>
+            <item
+                android:id="@+id/nav_athletics"
+                android:title="@string/menudrop_athletics" />
+        </menu>
+    </item>
+
+    <item android:title="Medical">
+        <menu>
+            <item
+                android:id="@+id/nav_sexualhygiene"
+                android:title="@string/menudrop_sexualhygiene" />
         </menu>
     </item>
 

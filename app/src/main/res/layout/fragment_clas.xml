@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/img_calfresh"
+        android:id="@+id/img_clas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="-50dp"
@@ -21,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/text_calfresh"
+        android:id="@+id/text_clas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

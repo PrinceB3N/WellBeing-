@@ -28,12 +28,14 @@ public class CalFreshFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_calfresh, container, false);
         final TextView textView = root.findViewById(R.id.text_calfresh);
         final ImageView img = root.findViewById(R.id.img_calfresh);
-        calfreshViewModel.getDrawable().observe(this, new Observer<Integer>() {
-            @Override
-            public void onChanged(Integer i) {
-                img.setImageResource(i.intValue());
-            }
-        });
+        img.setImageDrawable(this.getResources().getDrawable(R.drawable.CalFresh));
+        //img.setImageDrawable(this.getResources().getDrawable(R.drawable));
+//        calfreshViewModel.getDrawable().observe(this, new Observer<Integer>() {
+//            @Override
+//            public void onChanged(Integer i) {
+//                img.setImageResource(i.intValue());
+//            }
+//        });
         /*calfreshViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

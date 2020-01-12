@@ -5,4 +5,17 @@
     <item name="ic_menu_manage" type="drawable">@android:drawable/ic_menu_manage</item>
     <item name="ic_menu_share" type="drawable">@android:drawable/ic_menu_share</item>
     <item name="ic_menu_send" type="drawable">@android:drawable/ic_menu_send</item>
+
+    <item name="homescreen" type="drawable">@drawable/wellbeingfinal_01</item>
+
+    <item name="CLAS" type="drawable">@drawable/wellbeingfinal_04</item>
+    <item name="CAPS" type="drawable">@drawable/wellbeingfinal_05</item>
+    <item name="foodbank" type="drawable">@drawable/wellbeingfinal_06</item>
+    <item name="freefood" type="drawable">@drawable/wellbeingfinal_07</item>
+    <item name="athletics" type="drawable">@drawable/wellbeingfinal_08</item>
+    <item name="profile" type="drawable">@drawable/wellbeingfinal_09</item>
+    <item name="easyrecipe" type="drawable">@drawable/recipe</item>
+    <item name="CalFresh" type="drawable">@drawable/calfresh</item>
+    <item name="sexualhygiene" type="drawable">@drawable/hygiene</item>
+
 </resources>

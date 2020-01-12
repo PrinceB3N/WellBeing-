@@ -54,4 +54,29 @@
         android:name="com.example.myapplication.ui.nutrition.EasyRecipeFragment"
         android:label="@string/menudrop_easyrecipe"
         tools:layout="@layout/fragment_easyrecipe" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.myapplication.ui.Profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_sexualhygiene"
+        android:name="com.example.myapplication.ui.medical.SexualHygieneFragment"
+        android:label="@string/menudrop_sexualhygiene"
+        tools:layout="@layout/fragment_sexualhygiene" />
+    <fragment
+        android:id="@+id/nav_clas"
+        android:name="com.example.myapplication.ui.mind.CLASFragment"
+        android:label="@string/menudrop_clas"
+        tools:layout="@layout/fragment_clas" />
+    <fragment
+        android:id="@+id/nav_caps"
+        android:name="com.example.myapplication.ui.mind.CAPSFragment"
+        android:label="@string/menudrop_caps"
+        tools:layout="@layout/fragment_caps" />
+    <fragment
+        android:id="@+id/nav_athletics"
+        android:name="com.example.myapplication.ui.fitness.AthleticsFragment"
+        android:label="@string/menudrop_athletics"
+        tools:layout="@layout/fragment_athletics" />
 </navigation>

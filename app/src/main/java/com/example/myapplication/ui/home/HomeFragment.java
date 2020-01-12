@@ -1,5 +1,6 @@
 package com.example.myapplication.ui.home;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,12 +28,15 @@ public class HomeFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         //final TextView textView = root.findViewById(R.id.text_home);
         final ImageView img = root.findViewById(R.id.img_home);
+        img.setImageDrawable(this.getResources().getDrawable(R.drawable.homescreen));
         homeViewModel.getDrawable().observe(this, new Observer<Integer>() {
             @Override
             public void onChanged(Integer i) {
                 img.setImageResource(i.intValue());
             }
         });
+
+
         /*homeViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

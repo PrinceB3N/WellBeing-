@@ -5,28 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <WebView
-        android:id="@+id/webView1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
     <ImageView
-        android:id="@+id/img_eop"
+        android:id="@+id/img_hygiene"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="189dp"
-        tools:layout_editor_absoluteY="32dp" />
-
-    <TextView
-        android:id="@+id/text_eop"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_hygiene"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/img_hygiene" />
 </androidx.constraintlayout.widget.ConstraintLayout>

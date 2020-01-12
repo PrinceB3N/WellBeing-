@@ -35,13 +35,16 @@ public class EasyRecipeFragment extends Fragment {
          */
 
         final ImageView img = root.findViewById(R.id.img_easyrecipe);
-        easyrecipeViewModel.getDrawable().observe(this, new Observer<Integer>() {
+        img.setImageDrawable(this.getResources().getDrawable(R.drawable.easyrecipe));
+        /*easyrecipeViewModel.getDrawable().observe(this, new Observer<Integer>() {
             @Override
             public void onChanged(@Nullable Integer i) {
                 img.setImageResource(i.intValue());
 
             }
         });
+
+         */
         return root;
     }
 }
