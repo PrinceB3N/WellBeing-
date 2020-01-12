@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_medical"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_medical" />
+        <item
+            android:id="@+id/nav_fitness"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_fitness" />
+        <item
+            android:id="@+id/nav_mind"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_mind" />
+    </group>
+
+    <item android:title="Nutrition">
+        <menu>
+            <item
+                android:id="@+id/nav_foodbank"
+                android:title="@string/menudrop_foodbank" />
+            <item
+                android:id="@+id/nav_calfresh"
+                android:title="@string/menudrop_calfresh" />
+            <item
+                android:id="@+id/nav_eop"
+                android:title="@string/menudrop_eop" />
+            <item
+                android:id="@+id/nav_freefoodmap"
+                android:title="@string/menudrop_freefoodmap" />
+            <item
+                android:id="@+id/nav_easyrecipe"
+                android:title="@string/menudrop_easyrecipe" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.myapplication.ui.fitness.FitnessFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_fitness"
+        android:name="com.example.myapplication.ui.fitness.FitnessFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_mind"
+        android:name="com.example.myapplication.ui.mind.MindFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_send" />
+
+    <fragment
+        android:id="@+id/nav_medical"
+        android:name="com.example.myapplication.ui.medical.MedicalFragment"
+        android:label="@string/menu_medical"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_foodbank"
+        android:name="com.example.myapplication.ui.nutrition.FoodBankFragment"
+        android:label="@string/menudrop_foodbank"
+        tools:layout="@layout/fragment_foodbank" />
+    <fragment
+        android:id="@+id/nav_calfresh"
+        android:name="com.example.myapplication.ui.nutrition.CalFreshFragment"
+        android:label="@string/menudrop_calfresh"
+        tools:layout="@layout/fragment_calfresh" />
+    <fragment
+        android:id="@+id/nav_eop"
+        android:name="com.example.myapplication.ui.nutrition.EOPFragment"
+        android:label="@string/menudrop_eop"
+        tools:layout="@layout/fragment_eop" />
+    <fragment
+        android:id="@+id/nav_freefoodmap"
+        android:name="com.example.myapplication.ui.nutrition.FreeFoodMapFragment"
+        android:label="@string/menudrop_freefoodmap"
+        tools:layout="@layout/fragment_freefoodmap" />
+    <fragment
+        android:id="@+id/nav_easyrecipe"
+        android:name="com.example.myapplication.ui.nutrition.EasyRecipeFragment"
+        android:label="@string/menudrop_easyrecipe"
+        tools:layout="@layout/fragment_easyrecipe" />
+</navigation>
