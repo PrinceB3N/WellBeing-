@@ -25,12 +25,14 @@ public class FoodBankFragment extends Fragment {
                 ViewModelProviders.of(this).get(FoodBankViewModel.class);
         View root = inflater.inflate(R.layout.fragment_foodbank, container, false);
         final TextView textView = root.findViewById(R.id.text_foodbank);
-        foodbankViewModel.getText().observe(this, new Observer<String>() {
+        /*foodbankViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
         });
+
+         */
         final ImageView img = root.findViewById(R.id.img_foodbank);
         foodbankViewModel.getDrawable().observe(this, new Observer<Integer>() {
             @Override

@@ -22,7 +22,7 @@
             android:title="@string/menu_mind" />
     </group>
 
-    <item android:title="Nutrition">
+    <item android:title="Body">
         <menu>
             <item
                 android:id="@+id/nav_foodbank"
@@ -39,6 +39,11 @@
             <item
                 android:id="@+id/nav_easyrecipe"
                 android:title="@string/menudrop_easyrecipe" />
+        </menu>
+    </item>
+
+    <item android:title="Mind">
+        <menu>
         </menu>
     </item>
 

@@ -25,12 +25,14 @@ public class FreeFoodMapFragment extends Fragment {
                 ViewModelProviders.of(this).get(FreeFoodMapViewModel.class);
         View root = inflater.inflate(R.layout.fragment_freefoodmap, container, false);
         final TextView textView = root.findViewById(R.id.text_freefoodmap);
-        freefoodmapViewModel.getText().observe(this, new Observer<String>() {
+        /*freefoodmapViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
         });
+
+         */
         final ImageView img = root.findViewById(R.id.img_freefoodmap);
         freefoodmapViewModel.getDrawable().observe(this, new Observer<Integer>() {
             @Override
@@ -39,6 +41,8 @@ public class FreeFoodMapFragment extends Fragment {
 
             }
         });
+
+
         return root;
     }
 }

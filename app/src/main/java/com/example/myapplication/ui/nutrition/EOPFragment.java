@@ -25,12 +25,14 @@ public class EOPFragment extends Fragment {
                 ViewModelProviders.of(this).get(EOPViewModel.class);
         View root = inflater.inflate(R.layout.fragment_eop, container, false);
         final TextView textView = root.findViewById(R.id.text_eop);
-        eopViewModel.getText().observe(this, new Observer<String>() {
+        /*eopViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
         });
+
+         */
         final ImageView img = root.findViewById(R.id.img_eop);
         eopViewModel.getDrawable().observe(this, new Observer<Integer>() {
             @Override

@@ -1,7 +1,5 @@
-package com.example.myapplication.ui.nutrition;
+package com.example.myapplication.ui.home;
 
-import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,25 +14,26 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.myapplication.R;
+import com.example.myapplication.ui.nutrition.CalFreshViewModel;
 
-public class CalFreshFragment extends Fragment {
+public class HomeFragment extends Fragment {
 
-    private CalFreshViewModel calfreshViewModel;
+    private HomeViewModel homeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        calfreshViewModel =
-                ViewModelProviders.of(this).get(CalFreshViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_calfresh, container, false);
-        final TextView textView = root.findViewById(R.id.text_calfresh);
-        final ImageView img = root.findViewById(R.id.img_calfresh);
-        calfreshViewModel.getDrawable().observe(this, new Observer<Integer>() {
+        homeViewModel =
+                ViewModelProviders.of(this).get(HomeViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_home, container, false);
+        //final TextView textView = root.findViewById(R.id.text_home);
+        final ImageView img = root.findViewById(R.id.img_home);
+        homeViewModel.getDrawable().observe(this, new Observer<Integer>() {
             @Override
             public void onChanged(Integer i) {
                 img.setImageResource(i.intValue());
             }
         });
-        /*calfreshViewModel.getText().observe(this, new Observer<String>() {
+        /*homeViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

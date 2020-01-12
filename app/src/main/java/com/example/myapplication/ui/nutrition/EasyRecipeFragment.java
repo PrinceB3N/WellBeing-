@@ -25,12 +25,15 @@ public class EasyRecipeFragment extends Fragment {
                 ViewModelProviders.of(this).get(EasyRecipeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_easyrecipe, container, false);
         final TextView textView = root.findViewById(R.id.text_easyrecipe);
-        easyrecipeViewModel.getText().observe(this, new Observer<String>() {
+        /*easyrecipeViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
         });
+
+         */
+
         final ImageView img = root.findViewById(R.id.img_easyrecipe);
         easyrecipeViewModel.getDrawable().observe(this, new Observer<Integer>() {
             @Override
