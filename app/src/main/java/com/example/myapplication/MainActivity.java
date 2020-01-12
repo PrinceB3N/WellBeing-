@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "We support your wellbeing!", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_profile, R.id.nav_fitness,
                 R.id.nav_mind, R.id.nav_medical,R.id.nav_foodbank,R.id.nav_calfresh,R.id.nav_eop,R.id.nav_freefoodmap,
-                R.id.nav_easyrecipe, R.id.nav_sexualhygiene)
+                R.id.nav_easyrecipe, R.id.nav_caps, R.id.nav_clas, R.id.nav_athletics,R.id.nav_sexualhygiene)
                 .setDrawerLayout(drawer)
                 .build();
 

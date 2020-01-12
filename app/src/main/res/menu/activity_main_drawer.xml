@@ -13,7 +13,6 @@
             android:title="Profile" />
 
     </group>
-
     <item android:title="Nutrition">
         <menu>
             <item
@@ -44,7 +43,6 @@
                 android:title="@string/menudrop_caps" />
         </menu>
     </item>
-
     <item android:title="Fitness">
         <menu>
             <item
@@ -52,7 +50,6 @@
                 android:title="@string/menudrop_athletics" />
         </menu>
     </item>
-
     <item android:title="Medical">
         <menu>
             <item
